@@ -38,7 +38,7 @@ Enum.reduce([1, 2, 3, 4], 5, fn (x, accum) -> x + accum end)
 Enum.reduce([1, 2, 3, 4], fn (x, accum) -> x + accum end)
 # returns 10
 
-## Enum.uniq (removes duplicate entries)
+## Enum.uniq_by (removes duplicate entries)
 ## JS equivalent ???
-Enum.uniq([1, 2, 2, 3, 3, 3, 4, 4, 4, 4])
+Enum.uniq_by([1, 2, 2, 3, 3, 3, 4, 4, 4, 4], fn x -> x end)
 # returns [1, 2, 3, 4]
